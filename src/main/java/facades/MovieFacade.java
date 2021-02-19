@@ -88,7 +88,7 @@ public class MovieFacade {
     
     }
      public void populate(){
-        populate();
+        Populator.populate();
     
     }
     /*

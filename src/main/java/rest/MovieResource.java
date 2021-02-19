@@ -67,8 +67,9 @@ public class MovieResource {
 @Path("/populate")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public void populatedroplet() {
+    public String populatedroplet() {
         FACADE.populate();
+        return "gdgfh";
     }
    
 }
