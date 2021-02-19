@@ -87,7 +87,10 @@ public class MovieFacade {
         }
     
     }
+     public void populate(){
+        populate();
     
+    }
     /*
     public MovieDTO getById(long id){
         EntityManager em = emf.createEntityManager();

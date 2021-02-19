@@ -64,6 +64,11 @@ public class MovieResource {
         return new Gson().toJson(el);
     }
     
-
+@Path("/populate")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public void populatedroplet() {
+        FACADE.populate();
+    }
    
 }
