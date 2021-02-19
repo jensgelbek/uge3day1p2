@@ -3,7 +3,7 @@ package rest;
 import java.util.Set;
 import javax.ws.rs.core.Application;
 
-@javax.ws.rs.ApplicationPath("api")
+@javax.ws.rs.ApplicationPath("movie")
 public class ApplicationConfig extends Application {
 
     @Override
@@ -21,7 +21,8 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(org.glassfish.jersey.server.wadl.internal.WadlResource.class);
-        resources.add(rest.RenameMeResource.class);
+        resources.add(rest.Movie2Resource.class);
+        resources.add(rest.MovieResource.class);
     }
     
 }
